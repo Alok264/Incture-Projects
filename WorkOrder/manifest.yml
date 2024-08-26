@@ -1,0 +1,10 @@
+applications:
+-  name: incture-cw-imo-workorder-ops
+   memory: 500M
+   path: /target/operationTime-0.0.1-SNAPSHOT.jar
+   random-route: false
+   buildpack: sap_java_buildpack
+   env:
+     TZ: GMT+5:30
+   services:
+   - cw-imo-schema
